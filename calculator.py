@@ -23,8 +23,8 @@ class Calculator:
         result = 0
         check = 0
         if(a < 0 or b < 0):
-            a = 0 - a
-            b = 0 - b
+            a = abs(a)
+            b = abs(b)
             check = 1
         while a >= b:
             a = self.subtract(a, b)
